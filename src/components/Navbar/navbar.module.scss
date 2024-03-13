@@ -1,0 +1,160 @@
+.navbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: -2rem;
+    width: 100%;
+    padding: 0 10vw;
+    background-color: var(--red);
+    height: 0;
+    position: absolute;
+    top: 0;
+    transition: 0.5s height;
+    
+
+    .navigation {
+        position: absolute;
+        top: 0;
+        padding: 2rem 4rem;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        background-color: var(--red);
+
+        .button {
+            background-color: transparent;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            color: white;
+            transition: 0.5s color;
+        }
+
+        .burgerMenuContainer {
+            content: "";
+            width: 25px;
+            height: 25px;
+            position: relative;
+            right: 0;
+            cursor: pointer;
+
+            .burgerMenuTrigger {
+                content: "";
+                width: 25px;
+                height: 25px;
+                position: relative;
+                right: 0;
+                cursor: pointer;
+                z-index: 100;
+            }
+
+            .burgerMenu {
+                content: "";
+                background: white;
+                position: absolute;
+                width: 25px;
+                height: 4px;
+                z-index: 0;
+                top: calc(25px / 2 - 1.5px);
+                transition: 0.25s width ease-in-out,
+                    0.5s background-color ease-in-out;
+            }
+
+            .burgerMenu::after {
+                content: "";
+                background-color: white;
+                position: absolute;
+                width: 55px;
+                height: 4px;
+                transform: translateY(10px);
+                z-index: 0;
+                transition: 0.25s transform ease-in-out,
+                    0.5s background-color ease-in-out;
+            }
+
+            .burgerMenu::before {
+                content: "";
+                background-color: white;
+                position: absolute;
+                width: 55px;
+                height: 4px;
+                transform: translateY(-10px);
+                z-index: 0;
+                transition: 0.25s transform ease-in-out,
+                    0.5s background-color ease-in-out;
+            }
+
+            .burgerMenuTrigger:hover ~ .burgerMenu {
+                width: 35px;
+            }
+        }
+    }
+
+    .content {
+        position: absolute;
+        top: 30vh;
+        display: none;
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 1rem 0;
+
+                a {
+                    font-size: 3rem;
+                    color: white;
+                    transition: 0.25s color;
+                }
+
+                a:hover {
+                    color: rgb(232, 232, 232);
+                    transition: 0.25s color;
+                }
+            }
+        }
+    }
+}
+
+.navbar.active {
+    background-color: var(--red);
+    transition: 0.75s height;
+    height: 100vh;
+
+    .navigation {
+        .button {
+            color: white;
+            transition: 0.5s color;
+        }
+        .burgerMenuContainer {
+            .burgerMenu {
+                width: 0;
+                background-color: white;
+                transition: 0.25s width ease-in-out,
+                    0.25s background-color ease-in-out;
+            }
+
+            .burgerMenu::after {
+                transform: translateY(0px) rotate(135deg);
+                background-color: white;
+                transition: 0.25s transform ease-in-out,
+                    0.25s background-color ease-in-out;
+            }
+
+            .burgerMenu::before {
+                transform: translateY(0px) rotate(-135deg);
+                background-color: white;
+                transition: 0.25s transform ease-in-out,
+                    0.25s background-color ease-in-out;
+            }
+
+            .burgerMenuTrigger:hover ~ .burgerMenu {
+                width: 0px;
+            }
+        }
+    }
+    .content {
+        display: initial;
+    }
+}

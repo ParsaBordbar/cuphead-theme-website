@@ -10,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "framer-motion": "^11.0.12",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.71.1",
+    "vite-plugin-svgr": "^4.2.0"
   },
   "devDependencies": {
+    "@svgr/core": "^8.1.0",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
