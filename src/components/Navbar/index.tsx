@@ -47,7 +47,7 @@ const HamburgerNavbar = () => {
     };
 
     return (
-        <div className="bg-red-800">
+        <div>
             <div
             className={`${Styles.navbar} ${
                 burgerMenuActive ? Styles.active : ""
