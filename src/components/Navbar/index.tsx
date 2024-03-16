@@ -54,7 +54,7 @@ const HamburgerNavbar = () => {
             }`}
             >
                 <div className={Styles.navigation}>
-                    <button className={Styles.button}>LOGO</button>
+                    <button className={Styles.button}><img src="/src/assets/images/studiomdhr-logo-blog2.png.crdownload" className="w-10" alt="" /></button>
                     <div
                         className={Styles.burgerMenuContainer}
                         onClick={() => toggleBurgerMenu()}

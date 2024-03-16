@@ -1,6 +1,7 @@
 import './App.css'
 import Hero from './components/Hero'
 import HamburgerNavbar from './components/Navbar'
+import PlatformBox from './components/PlatformsBox'
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
           </div>
           <div className='col-span-full'>
             <Hero />
+          </div>
+          <div className='col-span-full'>
+            <PlatformBox />
           </div>
         </div>
       </section>
