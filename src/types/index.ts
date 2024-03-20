@@ -5,3 +5,10 @@ export interface NavElementType{
 export interface ButtonType{
     text: string;
 }
+
+export interface TextBoxType{
+    picture:string,
+    tittle:string,
+    bodyText:string,
+    buttonText: string,
+}
