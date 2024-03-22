@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import HamburgerNavbar from './components/Navbar'
 import PlatformBox from './components/PlatformsBox'
@@ -26,6 +27,9 @@ function App() {
           </div>
           <div className='bg-[var(--yellow)] col-span-full'>
             <TextBox  picture="src/assets/images/2M_Cuphead.gif" tittle="Read the Reviews!" bodyText="Don’t deal with the Devil!" buttonText="Let’s convince you!"/>
+          </div>
+          <div className='col-span-full'>
+            <Footer />
           </div>
         </div>
       </section>

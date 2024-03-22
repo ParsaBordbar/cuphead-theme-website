@@ -11,7 +11,7 @@ const Hero = () => {
                     </div>
                     <h1 className="text-5xl text-[var(--white)] lobster-regular"> Cuphead website!</h1>
                 </div>
-                <div className="px-24 flex justify-center items-center">
+                <div className="sm:px-24 px-10 flex justify-center items-center">
                     <p className="livvic-regular text-white text-center">small text here small text here
                         small text here small </p>
                 </div>
