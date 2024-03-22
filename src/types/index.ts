@@ -7,6 +7,7 @@ export interface ButtonType{
 }
 
 export interface TextBoxType{
+    textTheme:string,
     picture:string,
     tittle:string,
     bodyText:string,
