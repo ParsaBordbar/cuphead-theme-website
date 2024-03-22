@@ -9,19 +9,17 @@ const TextBox = ({textTheme, picture, tittle, bodyText, buttonText}:TextBoxType)
             <img src={picture} alt="" />
             <h2 className="text-[var(--text)] lobster-regular text-2xl">{tittle}</h2>
             <p className="text-[var(--text)] text-sm">{bodyText}</p>
-            <Button text={buttonText} />
+            <Button text={buttonText} textTheme="dark" type="textBox"/>
         </div>
         )
     }
-    if(textTheme === 'light'){
-        return(
-            <div className="flex justify-center items-center mt-8 flex-col">
-                <img src={picture} alt="" />
-                <h2 className="text-[var(--white)] lobster-regular text-2xl">{tittle}</h2>
-                <p className="text-[var(--white)] text-sm">{bodyText}</p>
-                <Button text={buttonText} />
-            </div>
-        )
-    }
+    return(
+        <div className="flex justify-center items-center mt-8 flex-col">
+            <img src={picture} alt="" />
+            <h2 className="text-[var(--white)] lobster-regular text-2xl">{tittle}</h2>
+            <p className="text-[var(--white)] text-sm">{bodyText}</p>
+            <Button text={buttonText} type="textBox"/>
+        </div>
+    )
 };
 export default TextBox;

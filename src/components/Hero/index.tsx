@@ -15,7 +15,7 @@ const Hero = () => {
                     <p className="livvic-regular text-white text-center">small text here small text here
                         small text here small </p>
                 </div>
-                <Button text="Tap to Map!"/>
+                <Button text="Tap to Map!" type="hero"/>
                 <img src="src/assets/images/cuphead-mugman-mschalice-trio.svg" alt="" />
             </div>
         </div>
