@@ -2,7 +2,7 @@
 const PlatformBox = () => {
     return(
         <section className="bg-[var(--yellow)] p-6 lobster-regular flex justify-center items-center flex-col gap-4">
-            <h2 className="text-4xl">Available on</h2>
+            <h2 className="text-4xl text-[var(--text)]">Available on</h2>
             <div className="flex flex-row gap-4"> 
                 <img src="/src/assets/images/ps4.svg" alt="" /> 
                 <img src="/src/assets/images/switch.svg" alt="" />

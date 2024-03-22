@@ -21,6 +21,12 @@ function App() {
           <div className='bg-[var(--teal)] col-span-full'>
             <TextBox textTheme='dark' picture="src/assets/images/Cuphead Trio A.svg" tittle="Buy the game with DLC!" bodyText="Cuphead goodness wiith delicous last course!" buttonText="Tap to Rap!"/>
           </div>
+          <div className='bg-[var(--blue)] col-span-full'>
+            <TextBox  picture="src/assets/images/cuphead-mumgn-bothers.svg" tittle="Buy the original game! " bodyText="Don’t deal with the Devil!" buttonText="Tap to grab!"/>
+          </div>
+          <div className='bg-[var(--yellow)] col-span-full'>
+            <TextBox  picture="src/assets/images/cuphead-mumgn-bothers.svg" tittle="Read the Reviews!" bodyText="Don’t deal with the Devil!" buttonText="Tap to grab!"/>
+          </div>
         </div>
       </section>
     </>

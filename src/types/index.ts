@@ -12,6 +12,6 @@ export interface TextBoxType{
     textTheme?:string,
     picture:string,
     tittle:string,
-    bodyText:string,
+    bodyText?:string,
     buttonText: string,
 }
