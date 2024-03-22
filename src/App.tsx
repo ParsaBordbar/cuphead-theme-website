@@ -10,7 +10,7 @@ function App() {
     <>
       <section>
         <div className='grid grid-cols-2'>
-          <div className='col-span-full'>
+          <div className='col-span-full z-20 sticky top-0'>
             <HamburgerNavbar />
           </div>
           <div className='col-span-full'>
