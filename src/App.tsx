@@ -25,7 +25,7 @@ function App() {
             <TextBox  picture="src/assets/images/cuphead-mumgn-bothers.svg" tittle="Buy the original game! " bodyText="Don’t deal with the Devil!" buttonText="Tap to grab!"/>
           </div>
           <div className='bg-[var(--yellow)] col-span-full'>
-            <TextBox  picture="src/assets/images/cuphead-mumgn-bothers.svg" tittle="Read the Reviews!" bodyText="Don’t deal with the Devil!" buttonText="Tap to grab!"/>
+            <TextBox  picture="src/assets/images/2M_Cuphead.gif" tittle="Read the Reviews!" bodyText="Don’t deal with the Devil!" buttonText="Let’s convince you!"/>
           </div>
         </div>
       </section>
