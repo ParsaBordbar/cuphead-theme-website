@@ -12,7 +12,7 @@ const Hero = () => {
                       >
                     <div className="flex flex-row gap-5">
                         <h1 className="text-5xl text-[var(--white)] lobster-regular ps-4">This is  a </h1>
-                        <img className="pt-2" src="/src/assets/images/Ms Chalice C 1.svg" alt="" />
+                        <img className="pt-2" src="assets/images/Ms Chalice C 1.svg" alt="" />
                     </div>
                     <h1 className="text-5xl text-[var(--white)] lobster-regular"> Cuphead website!</h1>
                 </motion.div>
@@ -21,7 +21,7 @@ const Hero = () => {
                         small text here small </p>
                 </div>
                 <Button text="Tap to Map!" type="hero"/>
-                <img src="src/assets/images/cuphead-mugman-mschalice-trio.svg" alt="" />
+                <img src="assets/images/cuphead-mugman-mschalice-trio.svg" alt="" />
             </div>
         </div>
     )
